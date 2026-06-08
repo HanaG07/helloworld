@@ -18,7 +18,8 @@ export async function obtenerClima(lat, len){
         }
     })
     const {temperature_2m, wind_speed_10m, weather_code} = respuesta.data.current
-
+    console.log(respuesta.status)
+    console.log(respuesta.statusText)
     return{
         temperatura: temperature_2m,
         viento: wind_speed_10m,
